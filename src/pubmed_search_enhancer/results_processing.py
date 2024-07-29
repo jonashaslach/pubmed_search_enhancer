@@ -1,6 +1,5 @@
-#results_processing.py
 import pandas as pd
-from .config import EXCEL_PATH, MODALITIES_GROUP_COLUMN, MODALITIES_COLUMN, TASKS_COLUMN, ML_TASKS_GROUP_COLUMN
+from .config import MODALITIES_GROUP_COLUMN, MODALITIES_COLUMN, TASKS_COLUMN, ML_TASKS_GROUP_COLUMN
 from .load_data import load_excel_data
 
 

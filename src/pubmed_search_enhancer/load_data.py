@@ -3,10 +3,10 @@ from .config import EXCEL_PATH, MODALITIES_SHEET_NAME, ML_TASKS_SHEET_NAME, MODA
 
 def load_excel_data():
     """
-        Load data from the Excel file.
+    Load data from the Excel file.
 
-        Returns:
-            tuple: DataFrames for selected columns.
+    Returns:
+        tuple: DataFrames for selected columns.
     """
     xls = pd.ExcelFile(EXCEL_PATH)
     df_modalities = pd.read_excel(xls, MODALITIES_SHEET_NAME)

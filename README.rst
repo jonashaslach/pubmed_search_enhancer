@@ -9,6 +9,8 @@ PubMed Search Enhancer
 Requirements
 ------------
 
+Works with: Python 3.12.4
+
 To run this project, you need to install `Ollama` and download the `BioWordVec` vector from the following GitHub pages:
 
 - `Ollama`: https://github.com/ollama/ollama
