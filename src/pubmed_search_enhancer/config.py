@@ -13,3 +13,4 @@ MESH_TERMS = (
     '("Computing Methodologies"[MeSH] OR "Informatics"[MeSH] OR "Data Science"[MeSH] OR "Information Management"[MeSH] '
     'OR "Information Storage and Retrieval"[MeSH] OR "Information Technology"[MeSH])'
 )
+MODEL_NAME = "llama3_test"

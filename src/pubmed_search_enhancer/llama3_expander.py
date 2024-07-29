@@ -1,6 +1,6 @@
 import subprocess
+from .config import MODEL_NAME
 
-MODEL_NAME = "llama3_test"
 def get_new_terms(group_name, current_terms):
     prompt = f'''
     I am looking to expand the list of terms associated with the medical category "{group_name}".
