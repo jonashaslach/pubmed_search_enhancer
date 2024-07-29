@@ -1,4 +1,3 @@
-# word_embeddings.py
 from gensim.models import KeyedVectors
 from .config import WORD_EMBEDDINGS_MODEL_PATH, MIN_SCORE
 
@@ -31,13 +30,3 @@ def extend_terms_with_embeddings(groups, model):
                 extended_terms.add(word)
         extended_groups[group] = list(extended_terms)
     return extended_groups
-
-# # Example usage
-# if __name__ == "__main__":
-#     model = load_word_embeddings()
-#     example_groups = {
-#         "Computed Tomography": ['computerized-tomography', 'pet-ct', 'computed-tomography']
-#     }
-#     extended_groups = extend_terms_with_embeddings(example_groups, model)
-#     for group, terms in extended_groups.items():
-#         print(f"{group}: {terms}")
