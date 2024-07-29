@@ -1,0 +1,8 @@
+pandas
+biopython
+seaborn
+matplotlib
+tqdm
+setuptools
+gensim
+openpyxl
