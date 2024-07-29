@@ -20,13 +20,10 @@ def main(search_combinations=None):
     results_path = os.path.join(results_dir, 'search_results.xlsx')
     plot_results_path = os.path.join(results_dir, 'plot_results.xlsx')
 
-    # Save detailed results
     save_detailed_results(results, results_path)
 
-    # Process and save summarized results
     process_results(results, plot_results_path)
 
-    # Plot heatmap
     plot_heatmap()
 
 

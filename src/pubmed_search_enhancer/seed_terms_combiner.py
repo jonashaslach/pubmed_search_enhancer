@@ -1,9 +1,14 @@
-#seed_terms_combiner.py
 from .config import MODALITIES_GROUP_COLUMN, MODALITIES_COLUMN, TASKS_COLUMN, ML_TASKS_GROUP_COLUMN, MESH_TERMS
 from .load_data import load_excel_data
 
 
 def combine_seed_terms():
+    """
+        Combine seed terms from selected columns.
+
+        Returns:
+            tuple: Initial terms and search combinations.
+    """
     df_modalities, df_ml_tasks = load_excel_data()
 
     grouped_modalities = df_modalities.groupby(MODALITIES_GROUP_COLUMN)[MODALITIES_COLUMN].apply(lambda mods: ' OR '.join(mods))
