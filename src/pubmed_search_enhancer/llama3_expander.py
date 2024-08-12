@@ -16,16 +16,16 @@ def get_new_terms(group_name, current_terms, all_groups):
     all_groups_str = ", ".join(f'"{group}"' for group in all_groups)
     prompt = f'''
     I am looking to expand the list of terms associated with the medical category "{group_name}".
-    Please provide 5-10 additional terms that specifically fall under the category of "{group_name}".
     The new terms should reflect specific procedures, tools, or techniques relevant to "{group_name}".
     The new terms should not overlap with terms that fit better in other medical imaging or monitoring categories.
-    The complete list of groups is s: {all_groups_str}.
+    The complete list of groups is: {all_groups_str}.
     The new terms should be unique and not simply extend existing words in the group.
     The new terms should be completely lower case.
     The new terms should use hyphens instead of spaces if a new term consists of two words like "radiographic-imaging" instead of "radiographic imaging".
     The new terms should be written between two stars (**) and have an explanation on the next line.
-    Here is the current list for reference (in no particular order):
-    {" ".join(current_terms)}
+    Here is the current list for reference (in no particular order): {" ".join(current_terms)}.
+    Please provide 5-10 additional terms that specifically fall under the category of "{group_name}".
+    Make sure that the new terms do not include the words  {" ".join(current_terms)}.
     '''
 
     result = subprocess.run(
