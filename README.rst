@@ -2,10 +2,6 @@
 PubMed Search Enhancer
 ========================
 
-.. image:: https://img.shields.io/pypi/v/pubmed_search_enhancer.svg
-        :target: https://pypi.python.org/pypi/pubmed_search_enhancer
-        :alt: PyPI Version
-
 Requirements
 ------------
 
